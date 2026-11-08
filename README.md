@@ -10,6 +10,6 @@
 
 ## GitHub / Sealos 部署
 GitHub Actions 在 main 分支更新时构建 Nginx 镜像至 GHCR，发布 latest 和提交 SHA 两类标签。
-Sealos 应用管理使用镜像 `ghcr.io/charlestzqtzq-bit/xue-niuniu-law-:<commit-sha>`，容器端口 80，启用 HTTPS 公网访问。
+Sealos 应用管理使用镜像 `ghcr.io/charlestzqtzq-bit/xue-niuniu-law:<commit-sha>`，容器端口 80，启用 HTTPS 公网访问。
 GitHub 仓库公开不代表容器镜像自动公开；首次构建完成后需确认 Package 的访问权限，或在 Sealos 配置私有镜像拉取认证。
 此工作流只构建镜像，不自动更新 Sealos。后续版本需在 Sealos 修改镜像标签后部署。
